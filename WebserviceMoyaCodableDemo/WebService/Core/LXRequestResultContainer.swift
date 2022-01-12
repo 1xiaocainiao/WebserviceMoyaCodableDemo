@@ -17,6 +17,8 @@ public class LXRequestResultContainer<T> where T: Codable {
         }
     }
     
+    public var originData: Any?
+    
     public var error: LXError?
     
     public var isValid: Bool = true
@@ -32,6 +34,7 @@ public class LXRequestResultContainer<T> where T: Codable {
         code = ""
         message = "数据解析出错了"
         isValid = false
+        originData = nil
     }
     
     
@@ -58,6 +61,8 @@ public class LXRequestResultContainer<T> where T: Codable {
                 self.error = LXError.missDataContent
                 return
             }
+            
+            self.originData = jsonValue
             
             // 如果data就是结果，直接赋值
             if let dataObject = jsonValue as? T {
