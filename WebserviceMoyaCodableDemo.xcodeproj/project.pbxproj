@@ -20,7 +20,6 @@
 		A0A4699E278EC317006B2AA2 /* MoyaTargetEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46991278EC317006B2AA2 /* MoyaTargetEx.swift */; };
 		A0A4699F278EC317006B2AA2 /* LXHandleRequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46992278EC317006B2AA2 /* LXHandleRequestPlugin.swift */; };
 		A0A469A0278EC317006B2AA2 /* LXAESEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46993278EC317006B2AA2 /* LXAESEncoding.swift */; };
-		A0A469A1278EC317006B2AA2 /* LXBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46994278EC317006B2AA2 /* LXBaseModel.swift */; };
 		A0A469A2278EC317006B2AA2 /* LXWebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46995278EC317006B2AA2 /* LXWebServiceHelper.swift */; };
 		A0A469A3278EC317006B2AA2 /* LXUploadFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46996278EC317006B2AA2 /* LXUploadFileInfo.swift */; };
 		A0A469A4278EC317006B2AA2 /* LXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46997278EC317006B2AA2 /* LXError.swift */; };
@@ -33,6 +32,7 @@
 		A0A469B0278ED0F5006B2AA2 /* jsonArray.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A469AE278ED0F5006B2AA2 /* jsonArray.json */; };
 		A0A469B2278ED950006B2AA2 /* CodableEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A469B1278ED950006B2AA2 /* CodableEx.swift */; };
 		B72B38AFE4C7014E71CEEF3B /* Pods_WebserviceMoyaCodableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489EA5F9EB8A979D0E8180A8 /* Pods_WebserviceMoyaCodableDemo.framework */; };
+		E17EAA79278F168200AFC74B /* LXBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EAA78278F168200AFC74B /* LXBaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		A0A46991278EC317006B2AA2 /* MoyaTargetEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTargetEx.swift; sourceTree = "<group>"; };
 		A0A46992278EC317006B2AA2 /* LXHandleRequestPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXHandleRequestPlugin.swift; sourceTree = "<group>"; };
 		A0A46993278EC317006B2AA2 /* LXAESEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXAESEncoding.swift; sourceTree = "<group>"; };
-		A0A46994278EC317006B2AA2 /* LXBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXBaseModel.swift; sourceTree = "<group>"; };
 		A0A46995278EC317006B2AA2 /* LXWebServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXWebServiceHelper.swift; sourceTree = "<group>"; };
 		A0A46996278EC317006B2AA2 /* LXUploadFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXUploadFileInfo.swift; sourceTree = "<group>"; };
 		A0A46997278EC317006B2AA2 /* LXError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXError.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		A0A469AE278ED0F5006B2AA2 /* jsonArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonArray.json; sourceTree = "<group>"; };
 		A0A469B1278ED950006B2AA2 /* CodableEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableEx.swift; sourceTree = "<group>"; };
 		BF8A25E6D9A91F284B0A0118 /* Pods-WebserviceMoyaCodableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceMoyaCodableDemo.debug.xcconfig"; path = "Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E17EAA78278F168200AFC74B /* LXBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXBaseModel.swift; sourceTree = "<group>"; };
 		E5A77EE4A674BB6609DBC107 /* Pods-WebserviceMoyaCodableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceMoyaCodableDemo.release.xcconfig"; path = "Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,8 +207,8 @@
 				A0A46996278EC317006B2AA2 /* LXUploadFileInfo.swift */,
 				A0A46997278EC317006B2AA2 /* LXError.swift */,
 				A0A46998278EC317006B2AA2 /* ServerKey.swift */,
-				A0A46994278EC317006B2AA2 /* LXBaseModel.swift */,
 				A0A469B1278ED950006B2AA2 /* CodableEx.swift */,
+				E17EAA78278F168200AFC74B /* LXBaseModel.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -403,11 +403,11 @@
 				A0A469A7278EC317006B2AA2 /* TestRequestApi.swift in Sources */,
 				A0A469A2278EC317006B2AA2 /* LXWebServiceHelper.swift in Sources */,
 				A0A4699F278EC317006B2AA2 /* LXHandleRequestPlugin.swift in Sources */,
+				E17EAA79278F168200AFC74B /* LXBaseModel.swift in Sources */,
 				A0A4699D278EC317006B2AA2 /* LXRequestResultContainer.swift in Sources */,
 				A0A46963278EC282006B2AA2 /* ViewController.swift in Sources */,
 				A0A4695F278EC282006B2AA2 /* AppDelegate.swift in Sources */,
 				A0A469A6278EC317006B2AA2 /* TestModel.swift in Sources */,
-				A0A469A1278EC317006B2AA2 /* LXBaseModel.swift in Sources */,
 				A0A469A5278EC317006B2AA2 /* ServerKey.swift in Sources */,
 				A0A469A0278EC317006B2AA2 /* LXAESEncoding.swift in Sources */,
 				A0A4699E278EC317006B2AA2 /* MoyaTargetEx.swift in Sources */,

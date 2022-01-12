@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //               }
         
         LXWebServiceHelper<UserInfo>().requestJSONModel(TestRequestType.baidu, progressBlock: nil) { container in
-                   print(container.value?.truename)
+                   print(container.value?.trueName)
                } exceptionHandle: { error in
                    print(error)
                }
@@ -45,7 +45,11 @@ class ViewController: UIViewController {
 //            let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
 //
 //            let container = LXRequestResultContainer<UserInfo>(jsonObject: jsonData)
-//            print(container.value)
+//            print(container.value?.trueName)
+//
+//            if let dic = container.value?.convertToJSONObject() {
+//                print(dic)
+//            }
 //        } catch {
 //            print("读取本地数据出现错误!",error)
 //        }

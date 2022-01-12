@@ -9,24 +9,12 @@ open class LXWebServiceHelper<T> where T: Codable {
     typealias ExceptionHandle = (Error?) -> Void
     typealias ResultContainerHandle = (LXRequestResultContainer<T>) -> Void
     
-    
-    @discardableResult
-    func requestJSONObject<R: LXMoyaTargetType>(_ type: R,
-                                                        progressBlock: ProgressBlock? = nil,
-                                                        completionHandle: @escaping JSONObjectHandle,
-                                                        exceptionHandle: @escaping ExceptionHandle) -> Cancellable? {
-        return _WebServiceHelper.default.requestJSONObject(type,
-                                                           progressBlock: progressBlock,
-                                                           completionHandle: completionHandle,
-                                                           exceptionHandle: exceptionHandle)
-    }
-    
     @discardableResult
     func requestJSONModel<R: LXMoyaTargetType>(_ type: R,
-                                                       progressBlock: ProgressBlock? = nil,
-                                                       completionHandle: @escaping ResultContainerHandle,
-                                                       exceptionHandle: @escaping ExceptionHandle) -> Cancellable? {
-        return _WebServiceHelper.default.requestJSONObject(type, progressBlock: progressBlock) { result in
+                                               progressBlock: ProgressBlock? = nil,
+                                               completionHandle: @escaping ResultContainerHandle,
+                                               exceptionHandle: @escaping ExceptionHandle) -> Cancellable? {
+        return requestJSONObject(type, progressBlock: progressBlock) { result in
             let container = LXRequestResultContainer<T>.init(jsonObject: result)
             if container.isValid {
                 completionHandle(container)
@@ -37,10 +25,6 @@ open class LXWebServiceHelper<T> where T: Codable {
             exceptionHandle(error)
         }
     }
-}
-
-fileprivate class _WebServiceHelper {
-    static let `default` = _WebServiceHelper()
     
     // 可自定义加解密插件等
     private func createProvider<R: LXMoyaTargetType>(type: R) -> MoyaProvider<R> {
@@ -73,9 +57,10 @@ fileprivate class _WebServiceHelper {
     }
     
     @discardableResult
-    func requestJSONObject<R: LXMoyaTargetType, T: LXBaseModel>(_ type: R,
-                                                        progressBlock: ProgressBlock?,
-                                                        completionHandle: @escaping LXWebServiceHelper<T>.JSONObjectHandle, exceptionHandle: @escaping (Error?) -> Void) -> Cancellable? {
+    private func requestJSONObject<R: LXMoyaTargetType>(_ type: R,
+                                                progressBlock: ProgressBlock?,
+                                                completionHandle: @escaping JSONObjectHandle,
+                                                exceptionHandle: @escaping (Error?) -> Void) -> Cancellable? {
         let provider = createProvider(type: type)
         let cancelable = provider.request(type, callbackQueue: nil, progress: progressBlock) { result in
             switch result {
@@ -83,12 +68,12 @@ fileprivate class _WebServiceHelper {
                 do {
                     let jsonObject = try successResponse.mapJSON()
                     
-                    #if DEBUG
+#if DEBUG
                     let jsonData = try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
                     let json = String(data: jsonData, encoding: .utf8) ?? ""
                     printl(message: json)
-                    #else
-                    #endif
+#else
+#endif
                     
                     let container = LXRequestResultContainer<T>(jsonObject: jsonObject)
                     if container.isValid {
@@ -108,3 +93,4 @@ fileprivate class _WebServiceHelper {
         return cancelable
     }
 }
+
