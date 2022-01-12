@@ -41,7 +41,3 @@ class SiteModel: LXBaseModel {
     var name: String = ""
     var url: String = ""
 }
-
-struct Test2Model {
-    var name: String
-}
