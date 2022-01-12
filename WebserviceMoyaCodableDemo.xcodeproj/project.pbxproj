@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0A4695F278EC282006B2AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4695E278EC282006B2AA2 /* AppDelegate.swift */; };
+		A0A46961278EC282006B2AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46960278EC282006B2AA2 /* SceneDelegate.swift */; };
+		A0A46963278EC282006B2AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46962278EC282006B2AA2 /* ViewController.swift */; };
+		A0A46966278EC282006B2AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A46964278EC282006B2AA2 /* Main.storyboard */; };
+		A0A46968278EC283006B2AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A46967278EC283006B2AA2 /* Assets.xcassets */; };
+		A0A4696B278EC283006B2AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0A46969278EC283006B2AA2 /* LaunchScreen.storyboard */; };
+		A0A46976278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46975278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.swift */; };
+		A0A46980278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4697F278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.swift */; };
+		A0A46982278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46981278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITestsLaunchTests.swift */; };
+		A0A4699D278EC317006B2AA2 /* LXRequestResultContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46990278EC317006B2AA2 /* LXRequestResultContainer.swift */; };
+		A0A4699E278EC317006B2AA2 /* MoyaTargetEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46991278EC317006B2AA2 /* MoyaTargetEx.swift */; };
+		A0A4699F278EC317006B2AA2 /* LXHandleRequestPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46992278EC317006B2AA2 /* LXHandleRequestPlugin.swift */; };
+		A0A469A0278EC317006B2AA2 /* LXAESEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46993278EC317006B2AA2 /* LXAESEncoding.swift */; };
+		A0A469A1278EC317006B2AA2 /* LXBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46994278EC317006B2AA2 /* LXBaseModel.swift */; };
+		A0A469A2278EC317006B2AA2 /* LXWebServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46995278EC317006B2AA2 /* LXWebServiceHelper.swift */; };
+		A0A469A3278EC317006B2AA2 /* LXUploadFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46996278EC317006B2AA2 /* LXUploadFileInfo.swift */; };
+		A0A469A4278EC317006B2AA2 /* LXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46997278EC317006B2AA2 /* LXError.swift */; };
+		A0A469A5278EC317006B2AA2 /* ServerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46998278EC317006B2AA2 /* ServerKey.swift */; };
+		A0A469A6278EC317006B2AA2 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4699A278EC317006B2AA2 /* TestModel.swift */; };
+		A0A469A7278EC317006B2AA2 /* TestRequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4699B278EC317006B2AA2 /* TestRequestApi.swift */; };
+		A0A469A8278EC317006B2AA2 /* TestPolicyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4699C278EC317006B2AA2 /* TestPolicyApi.swift */; };
+		A0A469AC278EC3A6006B2AA2 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A469AB278EC3A6006B2AA2 /* DebugPrint.swift */; };
+		A0A469AF278ED0F5006B2AA2 /* jsonDic.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A469AD278ED0F4006B2AA2 /* jsonDic.json */; };
+		A0A469B0278ED0F5006B2AA2 /* jsonArray.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A469AE278ED0F5006B2AA2 /* jsonArray.json */; };
+		A0A469B2278ED950006B2AA2 /* CodableEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A469B1278ED950006B2AA2 /* CodableEx.swift */; };
+		B72B38AFE4C7014E71CEEF3B /* Pods_WebserviceMoyaCodableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489EA5F9EB8A979D0E8180A8 /* Pods_WebserviceMoyaCodableDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0A46972278EC283006B2AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A46953278EC282006B2AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0A4695A278EC282006B2AA2;
+			remoteInfo = WebserviceMoyaCodableDemo;
+		};
+		A0A4697C278EC283006B2AA2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0A46953278EC282006B2AA2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0A4695A278EC282006B2AA2;
+			remoteInfo = WebserviceMoyaCodableDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		489EA5F9EB8A979D0E8180A8 /* Pods_WebserviceMoyaCodableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebserviceMoyaCodableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A4695B278EC282006B2AA2 /* WebserviceMoyaCodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebserviceMoyaCodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A4695E278EC282006B2AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0A46960278EC282006B2AA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A0A46962278EC282006B2AA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0A46965278EC282006B2AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0A46967278EC283006B2AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0A4696A278EC283006B2AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0A4696C278EC283006B2AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0A46971278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebserviceMoyaCodableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A46975278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceMoyaCodableDemoTests.swift; sourceTree = "<group>"; };
+		A0A4697B278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebserviceMoyaCodableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A4697F278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceMoyaCodableDemoUITests.swift; sourceTree = "<group>"; };
+		A0A46981278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceMoyaCodableDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0A46990278EC317006B2AA2 /* LXRequestResultContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXRequestResultContainer.swift; sourceTree = "<group>"; };
+		A0A46991278EC317006B2AA2 /* MoyaTargetEx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaTargetEx.swift; sourceTree = "<group>"; };
+		A0A46992278EC317006B2AA2 /* LXHandleRequestPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXHandleRequestPlugin.swift; sourceTree = "<group>"; };
+		A0A46993278EC317006B2AA2 /* LXAESEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXAESEncoding.swift; sourceTree = "<group>"; };
+		A0A46994278EC317006B2AA2 /* LXBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXBaseModel.swift; sourceTree = "<group>"; };
+		A0A46995278EC317006B2AA2 /* LXWebServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXWebServiceHelper.swift; sourceTree = "<group>"; };
+		A0A46996278EC317006B2AA2 /* LXUploadFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXUploadFileInfo.swift; sourceTree = "<group>"; };
+		A0A46997278EC317006B2AA2 /* LXError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXError.swift; sourceTree = "<group>"; };
+		A0A46998278EC317006B2AA2 /* ServerKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerKey.swift; sourceTree = "<group>"; };
+		A0A4699A278EC317006B2AA2 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		A0A4699B278EC317006B2AA2 /* TestRequestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRequestApi.swift; sourceTree = "<group>"; };
+		A0A4699C278EC317006B2AA2 /* TestPolicyApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPolicyApi.swift; sourceTree = "<group>"; };
+		A0A469AB278EC3A6006B2AA2 /* DebugPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
+		A0A469AD278ED0F4006B2AA2 /* jsonDic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonDic.json; sourceTree = "<group>"; };
+		A0A469AE278ED0F5006B2AA2 /* jsonArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonArray.json; sourceTree = "<group>"; };
+		A0A469B1278ED950006B2AA2 /* CodableEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableEx.swift; sourceTree = "<group>"; };
+		BF8A25E6D9A91F284B0A0118 /* Pods-WebserviceMoyaCodableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceMoyaCodableDemo.debug.xcconfig"; path = "Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E5A77EE4A674BB6609DBC107 /* Pods-WebserviceMoyaCodableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceMoyaCodableDemo.release.xcconfig"; path = "Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0A46958278EC282006B2AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72B38AFE4C7014E71CEEF3B /* Pods_WebserviceMoyaCodableDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A4696E278EC283006B2AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A46978278EC283006B2AA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69FF47FA287F92A32BA0AAA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF8A25E6D9A91F284B0A0118 /* Pods-WebserviceMoyaCodableDemo.debug.xcconfig */,
+				E5A77EE4A674BB6609DBC107 /* Pods-WebserviceMoyaCodableDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9613B65A2DDD30CA5F00D1D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				489EA5F9EB8A979D0E8180A8 /* Pods_WebserviceMoyaCodableDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0A46952278EC282006B2AA2 = {
+			isa = PBXGroup;
+			children = (
+				A0A4695D278EC282006B2AA2 /* WebserviceMoyaCodableDemo */,
+				A0A46974278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests */,
+				A0A4697E278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests */,
+				A0A4695C278EC282006B2AA2 /* Products */,
+				69FF47FA287F92A32BA0AAA1 /* Pods */,
+				9613B65A2DDD30CA5F00D1D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0A4695C278EC282006B2AA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0A4695B278EC282006B2AA2 /* WebserviceMoyaCodableDemo.app */,
+				A0A46971278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.xctest */,
+				A0A4697B278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0A4695D278EC282006B2AA2 /* WebserviceMoyaCodableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A0A469AE278ED0F5006B2AA2 /* jsonArray.json */,
+				A0A469AD278ED0F4006B2AA2 /* jsonDic.json */,
+				A0A4698E278EC317006B2AA2 /* WebService */,
+				A0A469AB278EC3A6006B2AA2 /* DebugPrint.swift */,
+				A0A4695E278EC282006B2AA2 /* AppDelegate.swift */,
+				A0A46960278EC282006B2AA2 /* SceneDelegate.swift */,
+				A0A46962278EC282006B2AA2 /* ViewController.swift */,
+				A0A46964278EC282006B2AA2 /* Main.storyboard */,
+				A0A46967278EC283006B2AA2 /* Assets.xcassets */,
+				A0A46969278EC283006B2AA2 /* LaunchScreen.storyboard */,
+				A0A4696C278EC283006B2AA2 /* Info.plist */,
+			);
+			path = WebserviceMoyaCodableDemo;
+			sourceTree = "<group>";
+		};
+		A0A46974278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0A46975278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.swift */,
+			);
+			path = WebserviceMoyaCodableDemoTests;
+			sourceTree = "<group>";
+		};
+		A0A4697E278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0A4697F278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.swift */,
+				A0A46981278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITestsLaunchTests.swift */,
+			);
+			path = WebserviceMoyaCodableDemoUITests;
+			sourceTree = "<group>";
+		};
+		A0A4698E278EC317006B2AA2 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				A0A4698F278EC317006B2AA2 /* Core */,
+				A0A46999278EC317006B2AA2 /* API */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		A0A4698F278EC317006B2AA2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A0A46990278EC317006B2AA2 /* LXRequestResultContainer.swift */,
+				A0A46991278EC317006B2AA2 /* MoyaTargetEx.swift */,
+				A0A46992278EC317006B2AA2 /* LXHandleRequestPlugin.swift */,
+				A0A46993278EC317006B2AA2 /* LXAESEncoding.swift */,
+				A0A46995278EC317006B2AA2 /* LXWebServiceHelper.swift */,
+				A0A46996278EC317006B2AA2 /* LXUploadFileInfo.swift */,
+				A0A46997278EC317006B2AA2 /* LXError.swift */,
+				A0A46998278EC317006B2AA2 /* ServerKey.swift */,
+				A0A46994278EC317006B2AA2 /* LXBaseModel.swift */,
+				A0A469B1278ED950006B2AA2 /* CodableEx.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A0A46999278EC317006B2AA2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A0A4699A278EC317006B2AA2 /* TestModel.swift */,
+				A0A4699B278EC317006B2AA2 /* TestRequestApi.swift */,
+				A0A4699C278EC317006B2AA2 /* TestPolicyApi.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0A4695A278EC282006B2AA2 /* WebserviceMoyaCodableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A46985278EC283006B2AA2 /* Build configuration list for PBXNativeTarget "WebserviceMoyaCodableDemo" */;
+			buildPhases = (
+				CD9005BAA129B7488BB3C465 /* [CP] Check Pods Manifest.lock */,
+				A0A46957278EC282006B2AA2 /* Sources */,
+				A0A46958278EC282006B2AA2 /* Frameworks */,
+				A0A46959278EC282006B2AA2 /* Resources */,
+				B02D4F58E982DC19C0F8DEF0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebserviceMoyaCodableDemo;
+			productName = WebserviceMoyaCodableDemo;
+			productReference = A0A4695B278EC282006B2AA2 /* WebserviceMoyaCodableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0A46970278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A46988278EC283006B2AA2 /* Build configuration list for PBXNativeTarget "WebserviceMoyaCodableDemoTests" */;
+			buildPhases = (
+				A0A4696D278EC283006B2AA2 /* Sources */,
+				A0A4696E278EC283006B2AA2 /* Frameworks */,
+				A0A4696F278EC283006B2AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0A46973278EC283006B2AA2 /* PBXTargetDependency */,
+			);
+			name = WebserviceMoyaCodableDemoTests;
+			productName = WebserviceMoyaCodableDemoTests;
+			productReference = A0A46971278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0A4697A278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A4698B278EC283006B2AA2 /* Build configuration list for PBXNativeTarget "WebserviceMoyaCodableDemoUITests" */;
+			buildPhases = (
+				A0A46977278EC283006B2AA2 /* Sources */,
+				A0A46978278EC283006B2AA2 /* Frameworks */,
+				A0A46979278EC283006B2AA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0A4697D278EC283006B2AA2 /* PBXTargetDependency */,
+			);
+			name = WebserviceMoyaCodableDemoUITests;
+			productName = WebserviceMoyaCodableDemoUITests;
+			productReference = A0A4697B278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0A46953278EC282006B2AA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A0A4695A278EC282006B2AA2 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A0A46970278EC283006B2AA2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A0A4695A278EC282006B2AA2;
+					};
+					A0A4697A278EC283006B2AA2 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A0A4695A278EC282006B2AA2;
+					};
+				};
+			};
+			buildConfigurationList = A0A46956278EC282006B2AA2 /* Build configuration list for PBXProject "WebserviceMoyaCodableDemo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0A46952278EC282006B2AA2;
+			productRefGroup = A0A4695C278EC282006B2AA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0A4695A278EC282006B2AA2 /* WebserviceMoyaCodableDemo */,
+				A0A46970278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests */,
+				A0A4697A278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0A46959278EC282006B2AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A4696B278EC283006B2AA2 /* LaunchScreen.storyboard in Resources */,
+				A0A469AF278ED0F5006B2AA2 /* jsonDic.json in Resources */,
+				A0A46968278EC283006B2AA2 /* Assets.xcassets in Resources */,
+				A0A469B0278ED0F5006B2AA2 /* jsonArray.json in Resources */,
+				A0A46966278EC282006B2AA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A4696F278EC283006B2AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A46979278EC283006B2AA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B02D4F58E982DC19C0F8DEF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9005BAA129B7488BB3C465 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebserviceMoyaCodableDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0A46957278EC282006B2AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A469A7278EC317006B2AA2 /* TestRequestApi.swift in Sources */,
+				A0A469A2278EC317006B2AA2 /* LXWebServiceHelper.swift in Sources */,
+				A0A4699F278EC317006B2AA2 /* LXHandleRequestPlugin.swift in Sources */,
+				A0A4699D278EC317006B2AA2 /* LXRequestResultContainer.swift in Sources */,
+				A0A46963278EC282006B2AA2 /* ViewController.swift in Sources */,
+				A0A4695F278EC282006B2AA2 /* AppDelegate.swift in Sources */,
+				A0A469A6278EC317006B2AA2 /* TestModel.swift in Sources */,
+				A0A469A1278EC317006B2AA2 /* LXBaseModel.swift in Sources */,
+				A0A469A5278EC317006B2AA2 /* ServerKey.swift in Sources */,
+				A0A469A0278EC317006B2AA2 /* LXAESEncoding.swift in Sources */,
+				A0A4699E278EC317006B2AA2 /* MoyaTargetEx.swift in Sources */,
+				A0A469A3278EC317006B2AA2 /* LXUploadFileInfo.swift in Sources */,
+				A0A469B2278ED950006B2AA2 /* CodableEx.swift in Sources */,
+				A0A469A4278EC317006B2AA2 /* LXError.swift in Sources */,
+				A0A469A8278EC317006B2AA2 /* TestPolicyApi.swift in Sources */,
+				A0A46961278EC282006B2AA2 /* SceneDelegate.swift in Sources */,
+				A0A469AC278EC3A6006B2AA2 /* DebugPrint.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A4696D278EC283006B2AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A46976278EC283006B2AA2 /* WebserviceMoyaCodableDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0A46977278EC283006B2AA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0A46980278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITests.swift in Sources */,
+				A0A46982278EC283006B2AA2 /* WebserviceMoyaCodableDemoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0A46973278EC283006B2AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0A4695A278EC282006B2AA2 /* WebserviceMoyaCodableDemo */;
+			targetProxy = A0A46972278EC283006B2AA2 /* PBXContainerItemProxy */;
+		};
+		A0A4697D278EC283006B2AA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0A4695A278EC282006B2AA2 /* WebserviceMoyaCodableDemo */;
+			targetProxy = A0A4697C278EC283006B2AA2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0A46964278EC282006B2AA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0A46965278EC282006B2AA2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0A46969278EC283006B2AA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0A4696A278EC283006B2AA2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0A46983278EC283006B2AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0A46984278EC283006B2AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0A46986278EC283006B2AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8A25E6D9A91F284B0A0118 /* Pods-WebserviceMoyaCodableDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebserviceMoyaCodableDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sioeye.WebserviceMoyaCodableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0A46987278EC283006B2AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A77EE4A674BB6609DBC107 /* Pods-WebserviceMoyaCodableDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WebserviceMoyaCodableDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sioeye.WebserviceMoyaCodableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A0A46989278EC283006B2AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sioeye.WebserviceMoyaCodableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebserviceMoyaCodableDemo.app/WebserviceMoyaCodableDemo";
+			};
+			name = Debug;
+		};
+		A0A4698A278EC283006B2AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sioeye.WebserviceMoyaCodableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebserviceMoyaCodableDemo.app/WebserviceMoyaCodableDemo";
+			};
+			name = Release;
+		};
+		A0A4698C278EC283006B2AA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sioeye.WebserviceMoyaCodableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebserviceMoyaCodableDemo;
+			};
+			name = Debug;
+		};
+		A0A4698D278EC283006B2AA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sioeye.WebserviceMoyaCodableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WebserviceMoyaCodableDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0A46956278EC282006B2AA2 /* Build configuration list for PBXProject "WebserviceMoyaCodableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A46983278EC283006B2AA2 /* Debug */,
+				A0A46984278EC283006B2AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0A46985278EC283006B2AA2 /* Build configuration list for PBXNativeTarget "WebserviceMoyaCodableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A46986278EC283006B2AA2 /* Debug */,
+				A0A46987278EC283006B2AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0A46988278EC283006B2AA2 /* Build configuration list for PBXNativeTarget "WebserviceMoyaCodableDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A46989278EC283006B2AA2 /* Debug */,
+				A0A4698A278EC283006B2AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0A4698B278EC283006B2AA2 /* Build configuration list for PBXNativeTarget "WebserviceMoyaCodableDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0A4698C278EC283006B2AA2 /* Debug */,
+				A0A4698D278EC283006B2AA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0A46953278EC282006B2AA2 /* Project object */;
+}

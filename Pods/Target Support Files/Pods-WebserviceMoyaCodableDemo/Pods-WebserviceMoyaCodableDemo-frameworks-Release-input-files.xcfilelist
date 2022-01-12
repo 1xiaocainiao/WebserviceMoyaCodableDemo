@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Moya/Moya.framework

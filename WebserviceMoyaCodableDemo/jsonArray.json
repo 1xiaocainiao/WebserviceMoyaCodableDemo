@@ -1,0 +1,15 @@
+{
+"code": 100000,
+"user_info": [{
+"username": null,
+"truename": "fehelper",
+"city": "北京",
+"age": 18,
+"sex": "男",
+"school": "北京大学"
+}],
+"site": {
+"name": "baidufe",
+"url": "https://www.baidufe.com"
+}
+}
