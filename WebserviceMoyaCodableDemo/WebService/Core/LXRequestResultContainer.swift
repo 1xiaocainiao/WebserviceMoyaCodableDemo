@@ -99,7 +99,6 @@ public class LXRequestResultContainer<T> where T: Codable {
                 setupDefaultErrorStatus()
                 self.error = LXError.exception(message: error.localizedDescription)
             }
-            
         } else {
             setupDefaultErrorStatus()
             self.error = LXError.serverResponseError(message: jsonObject[ServerKey.message.rawValue] as? String, code: self.code)
