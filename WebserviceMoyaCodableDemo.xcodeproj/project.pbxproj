@@ -25,14 +25,12 @@
 		A0A469A4278EC317006B2AA2 /* LXError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46997278EC317006B2AA2 /* LXError.swift */; };
 		A0A469A5278EC317006B2AA2 /* ServerKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46998278EC317006B2AA2 /* ServerKey.swift */; };
 		A0A469A6278EC317006B2AA2 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4699A278EC317006B2AA2 /* TestModel.swift */; };
-		A0A469A7278EC317006B2AA2 /* TestRequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4699B278EC317006B2AA2 /* TestRequestApi.swift */; };
 		A0A469A8278EC317006B2AA2 /* TestPolicyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4699C278EC317006B2AA2 /* TestPolicyApi.swift */; };
 		A0A469AC278EC3A6006B2AA2 /* DebugPrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A469AB278EC3A6006B2AA2 /* DebugPrint.swift */; };
 		A0A469AF278ED0F5006B2AA2 /* jsonDic.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A469AD278ED0F4006B2AA2 /* jsonDic.json */; };
 		A0A469B0278ED0F5006B2AA2 /* jsonArray.json in Resources */ = {isa = PBXBuildFile; fileRef = A0A469AE278ED0F5006B2AA2 /* jsonArray.json */; };
 		A0A469B2278ED950006B2AA2 /* CodableEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A469B1278ED950006B2AA2 /* CodableEx.swift */; };
 		B72B38AFE4C7014E71CEEF3B /* Pods_WebserviceMoyaCodableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489EA5F9EB8A979D0E8180A8 /* Pods_WebserviceMoyaCodableDemo.framework */; };
-		E17EAA79278F168200AFC74B /* LXBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17EAA78278F168200AFC74B /* LXBaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,14 +74,12 @@
 		A0A46997278EC317006B2AA2 /* LXError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXError.swift; sourceTree = "<group>"; };
 		A0A46998278EC317006B2AA2 /* ServerKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerKey.swift; sourceTree = "<group>"; };
 		A0A4699A278EC317006B2AA2 /* TestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
-		A0A4699B278EC317006B2AA2 /* TestRequestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestRequestApi.swift; sourceTree = "<group>"; };
 		A0A4699C278EC317006B2AA2 /* TestPolicyApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestPolicyApi.swift; sourceTree = "<group>"; };
 		A0A469AB278EC3A6006B2AA2 /* DebugPrint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugPrint.swift; sourceTree = "<group>"; };
 		A0A469AD278ED0F4006B2AA2 /* jsonDic.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonDic.json; sourceTree = "<group>"; };
 		A0A469AE278ED0F5006B2AA2 /* jsonArray.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jsonArray.json; sourceTree = "<group>"; };
 		A0A469B1278ED950006B2AA2 /* CodableEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableEx.swift; sourceTree = "<group>"; };
 		BF8A25E6D9A91F284B0A0118 /* Pods-WebserviceMoyaCodableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceMoyaCodableDemo.debug.xcconfig"; path = "Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		E17EAA78278F168200AFC74B /* LXBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LXBaseModel.swift; sourceTree = "<group>"; };
 		E5A77EE4A674BB6609DBC107 /* Pods-WebserviceMoyaCodableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebserviceMoyaCodableDemo.release.xcconfig"; path = "Target Support Files/Pods-WebserviceMoyaCodableDemo/Pods-WebserviceMoyaCodableDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -208,7 +204,6 @@
 				A0A46997278EC317006B2AA2 /* LXError.swift */,
 				A0A46998278EC317006B2AA2 /* ServerKey.swift */,
 				A0A469B1278ED950006B2AA2 /* CodableEx.swift */,
-				E17EAA78278F168200AFC74B /* LXBaseModel.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -217,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				A0A4699A278EC317006B2AA2 /* TestModel.swift */,
-				A0A4699B278EC317006B2AA2 /* TestRequestApi.swift */,
 				A0A4699C278EC317006B2AA2 /* TestPolicyApi.swift */,
 			);
 			path = API;
@@ -400,10 +394,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0A469A7278EC317006B2AA2 /* TestRequestApi.swift in Sources */,
 				A0A469A2278EC317006B2AA2 /* LXWebServiceHelper.swift in Sources */,
 				A0A4699F278EC317006B2AA2 /* LXHandleRequestPlugin.swift in Sources */,
-				E17EAA79278F168200AFC74B /* LXBaseModel.swift in Sources */,
 				A0A4699D278EC317006B2AA2 /* LXRequestResultContainer.swift in Sources */,
 				A0A46963278EC282006B2AA2 /* ViewController.swift in Sources */,
 				A0A4695F278EC282006B2AA2 /* AppDelegate.swift in Sources */,

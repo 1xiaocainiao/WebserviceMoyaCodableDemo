@@ -37,7 +37,6 @@ public class LXRequestResultContainer<T> where T: Codable {
         originData = nil
     }
     
-    
     private func decodeJSONObject() {
         guard let jsonObject = self.originObject as? [String: Any] else {
             setupDefaultErrorStatus()

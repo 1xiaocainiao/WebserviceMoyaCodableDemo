@@ -3,7 +3,7 @@
 import UIKit
 
 
-class TestModel: LXBaseModel {
+class TestModel: Codable {
     var user_info: UserInfo?
     var site: SiteModel?
 }
@@ -16,6 +16,7 @@ class UserInfo: Codable {
     var sex: String?
     var school: String?
     
+    // 需要做key的映射修改时才需要
     enum CodingKeys: String, CodingKey {
         case age = "age"
         case city = "city"
@@ -25,6 +26,7 @@ class UserInfo: Codable {
         case username = "username"
     }
     
+    // 可不实现，系统默认
 //    required init(from decoder: Decoder) throws {
 //        try super.init(from: decoder)
 //        let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -47,7 +49,7 @@ class UserInfo: Codable {
     }
 }
 
-class SiteModel: LXBaseModel {
+class SiteModel: Codable {
     var name: String = ""
     var url: String = ""
 }

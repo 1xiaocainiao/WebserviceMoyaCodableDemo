@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// 服务器关键字
 enum ServerKey: String {
     case success = "success"
     case value = "user_info"
