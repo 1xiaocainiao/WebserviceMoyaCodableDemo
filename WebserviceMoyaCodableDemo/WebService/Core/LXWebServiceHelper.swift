@@ -66,14 +66,12 @@ open class LXWebServiceHelper<T> where T: Codable {
             switch result {
             case .success(let successResponse):
                 do {
-                    let jsonObject = try successResponse.mapJSON()
-                    
 #if DEBUG
-                    let jsonData = try JSONSerialization.data(withJSONObject: jsonObject, options: .prettyPrinted)
-                    let json = String(data: jsonData, encoding: .utf8) ?? ""
-                    printl(message: json)
+                    let json = String(data: successResponse.data, encoding: .utf8) ?? ""
+                    print(json)
 #else
 #endif
+                    let jsonObject = try successResponse.mapJSON()
                     
                     let container = LXRequestResultContainer<T>(jsonObject: jsonObject)
                     if container.isValid {
