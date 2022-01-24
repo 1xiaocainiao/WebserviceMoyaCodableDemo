@@ -43,6 +43,11 @@ open class LXWebServiceHelper<T> where T: Codable {
             plugins.append(crePlugin!)
         }
         
+#if DEBUG
+        plugins.append(NetworkLoggerPlugin(configuration: .init(logOptions: [.requestHeaders, .requestBody, .successResponseBody])))
+#else
+#endif
+        
         let provider = MoyaProvider<R>(plugins: plugins)
         
         return provider
@@ -66,19 +71,14 @@ open class LXWebServiceHelper<T> where T: Codable {
             switch result {
             case .success(let successResponse):
                 do {
-#if DEBUG
-                    let json = String(data: successResponse.data, encoding: .utf8) ?? ""
-                    print(json)
-#else
-#endif
+//#if DEBUG
+//                    let json = String(data: successResponse.data, encoding: .utf8) ?? ""
+//                    print(json)
+//#else
+//#endif
                     let jsonObject = try successResponse.mapJSON()
                     
-                    let container = LXRequestResultContainer<T>(jsonObject: jsonObject)
-                    if container.isValid {
-                        completionHandle(jsonObject)
-                    } else {
-                        exceptionHandle(container.error)
-                    }
+                    completionHandle(jsonObject)
                 } catch  {
                     exceptionHandle(LXError.serverDataFormatError)
                 }
