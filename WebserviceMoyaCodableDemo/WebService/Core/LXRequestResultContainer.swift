@@ -89,7 +89,7 @@ public class LXRequestResultContainer<T> where T: Codable {
             } catch DecodingError.typeMismatch(let type, let context) {
                 setupDefaultErrorStatus()
                 self.error = LXError.dataContentTransformToModelFailed
-                print("typeMismatch: \(type) is mismatch in JSON: \(context.debugDescription)")
+                print("typeMismatch: \(type) is mismatch in JSON: \(context.debugDescription) \(context.codingPath)")
             } catch DecodingError.dataCorrupted(let context) {
                 setupDefaultErrorStatus()
                 self.error = LXError.dataContentTransformToModelFailed
