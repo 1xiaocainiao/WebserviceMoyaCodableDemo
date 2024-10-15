@@ -81,21 +81,21 @@ public class LXRequestResultContainer<T> where T: Codable {
             } catch DecodingError.keyNotFound(let key, let context) {
                 setupDefaultErrorStatus()
                 self.error = LXError.dataContentTransformToModelFailed
-                print("keyNotFound: \(key) is not found in JSON: \(context.debugDescription)")
+                printl(message: "keyNotFound: \(key) is not found in JSON: \(context.debugDescription)")
             } catch DecodingError.valueNotFound(let type, let context) {
                 setupDefaultErrorStatus()
                 self.error = LXError.dataContentTransformToModelFailed
-                print("valueNotFound: \(type) is not found in JSON: \(context.debugDescription)")
+                printl(message: "valueNotFound: \(type) is not found in JSON: \(context.debugDescription)")
             } catch DecodingError.typeMismatch(let type, let context) {
                 setupDefaultErrorStatus()
                 self.error = LXError.dataContentTransformToModelFailed
-                print("typeMismatch: \(type) is mismatch in JSON: \(context.debugDescription) \(context.codingPath)")
+                printl(message: "typeMismatch: \(type) is mismatch in JSON: \(context.debugDescription) \(context.codingPath)")
             } catch DecodingError.dataCorrupted(let context) {
                 setupDefaultErrorStatus()
                 self.error = LXError.dataContentTransformToModelFailed
-                print("dataCorrupted: \(context.debugDescription)")
+                printl(message: "dataCorrupted: \(context.debugDescription)")
             } catch let error {
-                print("error: \(error.localizedDescription)")
+                printl(message: "error: \(error.localizedDescription)")
                 setupDefaultErrorStatus()
                 self.error = LXError.exception(message: error.localizedDescription)
             }

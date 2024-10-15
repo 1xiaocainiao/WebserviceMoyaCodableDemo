@@ -73,7 +73,7 @@ open class LXWebServiceHelper<T> where T: Codable {
                 do {
 //#if DEBUG
 //                    let json = String(data: successResponse.data, encoding: .utf8) ?? ""
-//                    print(json)
+//                    printl(message: json)
 //#else
 //#endif
                     let jsonObject = try successResponse.mapJSON()

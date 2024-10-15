@@ -13,21 +13,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
 //        LXWebServiceHelper<String>().requestJSONModel(TestRequestType.baidu, progressBlock: nil) { container in
-//                   print(container.value)
+//                   printl(message: container.value)
 //               } exceptionHandle: { error in
-//                   print(error)
+//                   printl(message: error)
 //               }
         
         LXWebServiceHelper<UserInfo>().requestJSONModel(TestRequestType.baidu, progressBlock: nil) { container in
-                   print(container.value?.trueName)
+                   printl(message: container.value?.trueName)
                } exceptionHandle: { error in
-                   print(error)
+                   printl(message: error)
                }
                
        //        LXWebServiceHelper<LXBaseModel>().requestJSONModel(TestRequestType.baidu, progressBlock: nil) { container in
-       //            print(container.originObject)
+       //            printl(message: container.originObject)
        //        } exceptionHandle: { error in
-       //            print(error)
+       //            printl(message: error)
        //        }
                
         
@@ -45,13 +45,13 @@ class ViewController: UIViewController {
 //            let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
 //
 //            let container = LXRequestResultContainer<UserInfo>(jsonObject: jsonData)
-//            print(container.value?.trueName)
+//            printl(message: container.value?.trueName)
 //
 //            if let dic = container.value?.convertToJSONObject() {
-//                print(dic)
+//                printl(message: dic)
 //            }
 //        } catch {
-//            print("读取本地数据出现错误!",error)
+//            printl(message: "读取本地数据出现错误!",error)
 //        }
         
         // 数组解析
@@ -68,9 +68,9 @@ class ViewController: UIViewController {
 //            let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
 //
 //            let container = LXRequestResultContainer<[UserInfo]>(jsonObject: jsonData)
-//            print(container.value)
+//            printl(message: container.value)
 //        } catch {
-//            print("读取本地数据出现错误!",error)
+//            printl(message: "读取本地数据出现错误!",error)
 //        }
         // Do any additional setup after loading the view.
     }
