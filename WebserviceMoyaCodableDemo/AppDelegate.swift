@@ -14,6 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+#if DEBUG
+        let cacheKey: String = "HighPrecisionTimingPlugin"
+        if let dic: [String: Double] = CacheHelper.default.object(forkey: cacheKey), let jsonString = dic.toJsonString() {
+            printl(message: "接口返回 --- \(jsonString)")
+            printl(message: "接口返回 结束")
+        }
+#endif
         return true
     }
 

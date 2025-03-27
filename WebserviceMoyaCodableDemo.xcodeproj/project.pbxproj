@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04F15B002D951EDA009847C5 /* HighPrecisionTimingPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15AFF2D951EDA009847C5 /* HighPrecisionTimingPlugin.swift */; };
+		04F15B022D951F17009847C5 /* CacheHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15B012D951F17009847C5 /* CacheHelper.swift */; };
+		04F15B042D951F36009847C5 /* Dictionary+ToData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F15B032D951F36009847C5 /* Dictionary+ToData.swift */; };
 		A0A4695F278EC282006B2AA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A4695E278EC282006B2AA2 /* AppDelegate.swift */; };
 		A0A46961278EC282006B2AA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46960278EC282006B2AA2 /* SceneDelegate.swift */; };
 		A0A46963278EC282006B2AA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A46962278EC282006B2AA2 /* ViewController.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04F15AFF2D951EDA009847C5 /* HighPrecisionTimingPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighPrecisionTimingPlugin.swift; sourceTree = "<group>"; };
+		04F15B012D951F17009847C5 /* CacheHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheHelper.swift; sourceTree = "<group>"; };
+		04F15B032D951F36009847C5 /* Dictionary+ToData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+ToData.swift"; sourceTree = "<group>"; };
 		489EA5F9EB8A979D0E8180A8 /* Pods_WebserviceMoyaCodableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebserviceMoyaCodableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A4695B278EC282006B2AA2 /* WebserviceMoyaCodableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebserviceMoyaCodableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A4695E278EC282006B2AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,6 +158,8 @@
 			isa = PBXGroup;
 			children = (
 				A0A469AE278ED0F5006B2AA2 /* jsonArray.json */,
+				04F15B032D951F36009847C5 /* Dictionary+ToData.swift */,
+				04F15B012D951F17009847C5 /* CacheHelper.swift */,
 				A0A469AD278ED0F4006B2AA2 /* jsonDic.json */,
 				A0A4698E278EC317006B2AA2 /* WebService */,
 				A0A469AB278EC3A6006B2AA2 /* DebugPrint.swift */,
@@ -195,6 +203,7 @@
 		A0A4698F278EC317006B2AA2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				04F15AFF2D951EDA009847C5 /* HighPrecisionTimingPlugin.swift */,
 				A0A46990278EC317006B2AA2 /* LXRequestResultContainer.swift */,
 				A0A46991278EC317006B2AA2 /* MoyaTargetEx.swift */,
 				A0A46992278EC317006B2AA2 /* LXHandleRequestPlugin.swift */,
@@ -396,7 +405,9 @@
 			files = (
 				A0A469A2278EC317006B2AA2 /* LXWebServiceHelper.swift in Sources */,
 				A0A4699F278EC317006B2AA2 /* LXHandleRequestPlugin.swift in Sources */,
+				04F15B022D951F17009847C5 /* CacheHelper.swift in Sources */,
 				A0A4699D278EC317006B2AA2 /* LXRequestResultContainer.swift in Sources */,
+				04F15B042D951F36009847C5 /* Dictionary+ToData.swift in Sources */,
 				A0A46963278EC282006B2AA2 /* ViewController.swift in Sources */,
 				A0A4695F278EC282006B2AA2 /* AppDelegate.swift in Sources */,
 				A0A469A6278EC317006B2AA2 /* TestModel.swift in Sources */,
@@ -407,6 +418,7 @@
 				A0A469B2278ED950006B2AA2 /* CodableEx.swift in Sources */,
 				A0A469A4278EC317006B2AA2 /* LXError.swift in Sources */,
 				A0A469A8278EC317006B2AA2 /* TestPolicyApi.swift in Sources */,
+				04F15B002D951EDA009847C5 /* HighPrecisionTimingPlugin.swift in Sources */,
 				A0A46961278EC282006B2AA2 /* SceneDelegate.swift in Sources */,
 				A0A469AC278EC3A6006B2AA2 /* DebugPrint.swift in Sources */,
 			);
